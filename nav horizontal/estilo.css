@@ -1,0 +1,257 @@
+
+html{
+    font-size: 20px;
+    }
+.desplegar{
+        height: 190px !important;
+       
+}
+
+.svgopen{
+    display: block !important;
+    width: 40px !important;
+    height: 30px !important;
+    float:right;
+    fill: yellowgreen;
+}
+.svgclose{
+    display: none;
+}
+body{
+    background-color: steelblue;
+    /* background-image: url("./fondo.jpg"); */
+   
+    padding: 0;
+    margin:0; 
+    
+ }
+ .contentprin{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+ }
+ /**NAV BAR**/
+ 
+ svg{
+    width: 40px;
+    height: 30px;
+ }
+ .mas{
+    float:right;
+    width: 40px !important;
+    height: 30px !important;
+}
+.cerrar{   
+    display: none;
+}
+.barmenu{
+    display: none;
+}
+.menu{
+    position: absolute;
+    z-index: 7;
+    display: flex;
+    flex-direction: column; 
+    /* float: right;  */
+    background-color: rgb(46, 50, 54);
+
+    padding: 0;
+    margin: 0;
+    width: auto;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease-out;
+    transform: translateY(5px);
+    
+}
+
+nav {
+   
+    background-color: rgb(46, 50, 54);
+    box-shadow: 3px 3px 0.6em rgb(23, 53, 218), 0 0 0.4em rgb(250, 252, 248);
+    
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    /* min-width: 200px; */
+    
+}
+nav .ulnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    gap:10px;
+    margin: 0;
+    padding:0;
+    box-shadow:inset 0 -3em 3em rgba(0,0,0,0.1), 0 0  0 0 rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+   
+}
+.navmenu{
+position: absolute;
+margin-top: 10px;
+right:0;   
+}
+nav ul li a{
+    color: rgb(238, 159, 14);
+ }
+nav ul li a:hover {
+color: yellowgreen;
+cursor: pointer;
+}
+
+ .contenedor{
+      position: relative;
+
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     
+     gap:15px;
+ }
+ 
+ .continput{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border: 6px solid yellowgreen;
+     border-radius: 12px;
+     gap:5px;
+     width: 10rem;
+     /* max-width: 200px; */
+     height: 400px;
+     background-color: aqua;
+ }
+ .campotexto{
+     border-radius: 12px;
+ }
+ #apellido{
+     border:6px solid steelblue ;
+ }
+ .boton{
+     cursor: pointer;
+     max-width: 40%;
+     margin: auto auto;
+ }
+ img{
+     position: relative;
+     border-radius: 50%;
+     height:4rem;
+     max-width:140px ;
+     max-height: 140px;
+     margin: auto auto;
+ }
+ li{
+    padding: 2px;
+     list-style-type: none;
+     box-shadow:
+     inset 0 -3em 3em rgba(0,0,0,0.1),
+      0 0  0 0 rgb(175, 206, 247),
+      0.3em 0.3em 1em rgba(0,0,0,0.3);  
+      height: 80px;
+ }
+ .link{
+  
+
+ }
+ a{
+     text-decoration: none;
+ }
+ .derecha{
+    background-color: blueviolet;
+    border: 6px solid yellowgreen;
+    border-radius: 12px;
+    width: 10rem;
+    /* min-width: 200px !important; */
+   height: 400px;
+   /* margin: auto auto; */
+ }
+ @media screen and (max-width: 758px) {
+    html{
+        font-size: 18px;
+        }
+        .desplegar{
+            height: 140px !important;
+           
+        }
+        nav{
+            height:  70px;
+        }
+        li{
+            height: 70px;
+        }
+        .continput{
+            height: 300px;
+        }
+        .derecha{
+            height: 300px;
+        }
+       
+}
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 12px;
+        }
+        .desplegar{
+            height: 80px !important;
+           
+        }
+
+        .barmenu{
+            display: block;
+        }
+        .navmenu{
+            cursor: pointer;
+        }
+       
+        .despnavmenu{
+           
+            height: 300px !important;
+           
+        }
+         nav{
+            overflow: hidden;
+            transition: .5s ease-out;
+            transform: translateY(0);
+        } 
+        nav .ulnav{
+            display:none;
+        }
+        nav .ulnav2{
+            
+            width: auto;
+            padding: 0;
+            margin:20% auto;
+            margin-right: auto;
+            
+        }
+        
+        .menu2{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            background-color: rgb(46, 50, 54);
+        
+            padding: 0;
+            margin: 0;
+            width: auto;
+            overflow: hidden;
+            height: 0;
+            transition: .5s ease-out;
+            transform: translateY(0);
+            
+        }
+       
+        .continput{
+            height: 200px;
+        }
+        .derecha{
+            height: 200px;
+        }
+       
+       
+        li{
+            height: auto;
+           
+        }
+}
